@@ -5,10 +5,11 @@ export const Avatar = () => {
     return (
         <div className='hidden xl:flex xl:max-w-none'>
             <Image
-                src={'/avatar4.png'}
-                width={737}
-                height={678}
+                src={'/avatar7.png'}
+                width={640}
+                height={578}
                 alt=''
+                className="w-full h-full translate-z-0"
             />
         </div>
     )
