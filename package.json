@@ -13,6 +13,8 @@
   "license": "ISC",
   "dependencies": {
     "@next/font": "^14.1.0",
+    "@tsparticles/engine": "^3.1.0",
+    "@tsparticles/react": "^3.0.0",
     "@types/node": "^20.11.5",
     "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.18",
@@ -21,7 +23,10 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
+    "react-tsparticles": "^2.12.2",
     "tailwind-scrollbar": "^3.0.5",
+    "tsparticles-engine": "^2.12.0",
+    "tsparticles-slim": "^2.12.0",
     "typescript": "^5.3.3"
   },
   "devDependencies": {
