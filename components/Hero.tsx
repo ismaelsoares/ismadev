@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { Particle } from "./Particle"
 import { TextEffect } from "./TextEffect"
+import { Socials } from "./Socials"
 
 // framer motion
 import { motion } from 'framer-motion';
@@ -24,6 +25,7 @@ export const Hero = () => {
                   OLÁ, EU SOU <span className="text-yellow-400">ISMAEL!</span>
                </h1>
                <TextEffect />
+               <Socials />
                <p className="mt-[1.5rem] text-[18px] text-[#ffffff92]">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed,
                   ut. Necessitatibus, laboriosam itaque sit laudantium odit commodi!
