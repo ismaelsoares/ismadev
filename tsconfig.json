@@ -109,7 +109,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "pages/about/index.js"  ],
   "exclude": [
     "node_modules"
   ]
