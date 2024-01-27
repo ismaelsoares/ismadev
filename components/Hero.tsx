@@ -5,7 +5,7 @@ import { TextEffect } from "./TextEffect"
 // framer motion
 import { motion } from 'framer-motion';
 import { fadeIn } from "@/variants";
-import { ArrowDownTrayIcon } from "@heroicons/react/20/solid";
+import { ArrowDownTrayIcon, PlayCircleIcon } from "@heroicons/react/20/solid";
 
 export const Hero = () => {
    return (
@@ -22,18 +22,31 @@ export const Hero = () => {
                   OLÁ, EU SOU <span className="text-yellow-400">ISMAEL!</span>
                </h1>
                <TextEffect />
-               <p className="mt-[2rem] text-[20px] text-[#ffffff92]">
+               <p className="mt-[1.5rem] text-[18px] text-[#ffffff92]">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed,
                   ut. Necessitatibus, laboriosam itaque sit laudantium odit commodi!
                   Libero, ad sed consectetur ducimus, nam asperiores quis eligendi sit ipsam eveniet et!
                </p>
-               <div className="mt-[2rem] flex-col space-y-6 sm:space-y-0 sm:flex sm:flex-row items-center sm:space-x-6">
+               <motion.div
+                  className="mt-[2rem] flex-col space-y-6 sm:space-y-0 
+                  sm:flex sm:flex-row items-center sm:space-x-6"
+                  variants={fadeIn('right', 0.6)}
+                  initial='hidden'
+                  animate='show'
+                  exit='hidden'
+               >
                   <button className="px-[2rem] hover:bg-yellow-400 transition-all duration-200 py-[1rem]
                    text-[18px] font-bold uppercase bg-[#55e6a5] text-black flex items-center space-x-2">
                      <p>Download Cv</p>
                      <ArrowDownTrayIcon className="w-[1.6rem] h-[1.7rem] text-black" />
                   </button>
-               </div>
+                  <button className="flex items-center space-x-2">
+                     <PlayCircleIcon className="w-[4rem] h-[4rem] hover:text-yellow-400 transition-all duration-200 text-[#55e6a5]" />
+                     <p className="text-[20px] font-semibold text-white">
+                        Watch The Video
+                     </p>
+                  </button>
+               </motion.div>
             </motion.div>
             <motion.div
                className="w-[600px] h-[600px] hidden bg-[#55e6a5] 
