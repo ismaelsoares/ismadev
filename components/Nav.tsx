@@ -1,4 +1,5 @@
 import { Bars3Icon } from "@heroicons/react/20/solid"
+import { Socials } from "./Socials";
 
 interface Props {
    openNav: () => void;
@@ -12,6 +13,7 @@ export const Nav = ({ openNav }: Props) => {
                WEB
                <span className="text-yellow-300">DEV</span>
             </h1>
+            {/* <Socials /> */}
             <div className="nav-link">HOME</div>
             <div className="nav-link">SERVICES</div>
             <div className="nav-link">ABOUT</div>

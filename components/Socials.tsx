@@ -13,22 +13,19 @@ import {
 export const Socials = () => {
    return (
       <div className="flex items-center text-lg gap-x-6 text-white mt-4">
-         <Link href={''} className="transition-all duration-300 hover:text-accent">
+         <Link href='https://www.linkedin.com/in/ismaeldoria/' target="_blank" className="">
             <RiLinkedinLine />
          </Link>
-         <Link href={''} className="transition-all duration-300 hover:text-accent">
+         <Link href='https://github.com/ismaelsoares' target="_blank" className="transition-all duration-300 hover:text-accent">
             <RiGithubLine />
          </Link>
-         <Link href={''} className="transition-all duration-300 hover:text-accent">
-            <RiWhatsappLine />
-         </Link>
-         <Link href={''} className="transition-all duration-300 hover:text-accent">
+         <Link href='https://www.facebook.com/ismaelsoaresdoria' target="_blank" className="transition-all duration-300 hover:text-accent">
             <RiFacebookBoxLine />
          </Link>
-         <Link href={''} className="transition-all duration-300 hover:text-accent">
+         <Link href='https://www.instagram.com/ismael_soares/' target="_blank" className="transition-all duration-300 hover:text-accent">
             <RiInstagramLine />
          </Link>
-         <Link href={''} className="transition-all duration-300 hover:text-accent">
+         <Link href='https://twitter.com/ismael_doria' target="_blank" className="transition-all duration-300 hover:text-accent">
             <RiTwitterLine />
          </Link>
       </div>
