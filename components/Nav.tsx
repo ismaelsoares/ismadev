@@ -17,7 +17,7 @@ export const Nav = ({ openNav }: Props) => {
             <div className="nav-link">HOME</div>
             <div className="nav-link">SERVICES</div>
             <div className="nav-link">ABOUT</div>
-            <div className="nav-link">PROJECT</div>
+            <div className="nav-link">PROJECTS</div>
             <div className="nav-link">BLOG</div>
             <div className="nav-link">CONTACT</div>
             <div onClick={openNav}>
