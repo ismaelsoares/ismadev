@@ -12,9 +12,13 @@ export const Skills = () => {
                   skill1="html"
                   skill2="css"
                   skill3="javascript"
+                  skill4="sql"
+                  skill5="python"
                   level1="w-[91%]"
                   level2="w-[88%]"
                   level3="w-[80%]"
+                  level4="w-[60%]"
+                  level5="w-[70%]"
                />
             </div>
             <div>
@@ -23,9 +27,13 @@ export const Skills = () => {
                   skill1="React JS"
                   skill2="Next JS"
                   skill3="TypeScript"
+                  skill4="Tailwind CSS"
+                  skill5="Node/Express"
                   level1="w-[81%]"
                   level2="w-[78%]"
                   level3="w-[85%]"
+                  level4="w-[75%]"
+                  level5="w-[78%]"
                />
             </div>
          </div>

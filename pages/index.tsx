@@ -1,10 +1,12 @@
 import { About } from "@/components/About";
+import { Blog } from "@/components/Blog";
 import { Hero } from "@/components/Hero";
 import { MobileNav } from "@/components/MobileNav";
 import { Nav } from "@/components/Nav";
 import { Projects } from "@/components/Projects";
 import { Services } from "@/components/Services";
 import { Skills } from "@/components/Skills";
+import { Testimonial } from "@/components/Testimonial";
 import { useState } from "react";
 
 const HomePage = () => {
@@ -22,6 +24,8 @@ const HomePage = () => {
                <Services />
                <Skills />
                <Projects />
+               <Testimonial />
+               <Blog />
             </div>
          </div>
       </div>
