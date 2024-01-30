@@ -27,9 +27,10 @@ export const Hero = () => {
                <TextEffect />
                <Socials />
                <p className="mt-[1.5rem] text-[18px] text-[#ffffff92]">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Et iste minima, temporibus vero nesciunt fugit aliquid nostrum,
-                  ratione non hic eum qui provident mollitia!
+                  Trabalho como desenvolvedor web apaixonado por criar experiências incríveis na web.
+                  Tenho experiência em desenvolvimento front-end e back-end, utilizando tecnologias como HTML, CSS, JavaScript, React, Node.js,
+                  e bancos de dados como MySQL e MongoDB. Estou sempre buscando aprender novas tecnologias e melhorar minhas habilidades para criar aplicações web de alta qualidade.
+                  Estou animado para enfrentar novos desafios e contribuir para projetos inovadores no mundo da web!
                </p>
                <motion.div
                   className="mt-[2rem] flex-col space-y-6 sm:space-y-0 
