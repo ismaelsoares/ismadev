@@ -28,7 +28,7 @@ export const SkillsLanguage = ({
    return (
       <div>
          <div className="relative mb-[3rem]">
-            <h1 className=" flex p-5 w-[100%] uppercase transition-all hover:text-red-400 bg-gray-800 rounded-sm text-white text-[20px] font-bold">
+            <h1 className=" flex p-5 w-[100%] uppercase transition-all bg-gray-800 rounded-sm text-white text-[20px] font-bold">
                <IoLogoHtml5 className="w-[2rem] h-[2rem]" />
                {skill1}
             </h1>
@@ -36,7 +36,7 @@ export const SkillsLanguage = ({
             </span>
          </div>
          <div className="relative mb-[3rem]">
-            <h1 className="flex p-5 w-[100%] uppercase transition-all hover:text-blue-400 bg-gray-800 rounded-sm text-white text-[20px] font-bold">
+            <h1 className="flex p-5 w-[100%] uppercase transition-all bg-gray-800 rounded-sm text-white text-[20px] font-bold">
                <IoLogoCss3 className="w-[2rem] h-[2rem]" />
                {skill2}
             </h1>
