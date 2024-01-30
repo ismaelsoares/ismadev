@@ -13,9 +13,12 @@ export const About = () => {
                </h2>
                <div className="mb-[3rem] flex items-center md:space-x-10">
                   <span className="w-[100px] hidden md:block h-[5px] bg-slate-400 rounded-sm"></span>
-                  <p className="text-[19px] text-slate-300 w-[80%]">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                     At atque officiis sunt adipisci quaerat nesciunt laborum consequuntur.
-                     Animi possimus porro incidunt unde deleniti nam voluptatem quas, ut reiciendis fugit architecto.
+                  <p className="text-[19px] text-slate-300 w-[80%]">Concursado desde os 18 anos, amante de tecnologia, autodidata, comecei com manutenção e
+                     montagem de computadores. No trabalho, fazia manutenção dos laboratórios do programa PROINFO,
+                     utilizando o SO Linux Educacional, inclusive liderei um projeto piloto de ensino de informática para crianças e
+                     adolescentes. Mas foi na faculdade que ampliei meus horizontes sobre tecnologia, sobretudo programação.
+                     Me formei desenvolvendo um armário inteligente, utilizando Arduíno e RFID, sendo inclusive publicado na
+                     UEMA e UESPI.
                   </p>
                </div>
                <button className="px-[2rem] hover:bg-yellow-400 transition-all duration-200 py-[1rem]

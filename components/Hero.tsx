@@ -27,12 +27,9 @@ export const Hero = () => {
                <TextEffect />
                <Socials />
                <p className="mt-[1.5rem] text-[18px] text-[#ffffff92]">
-                  Concursado desde os 18 anos, amante de tecnologia, autodidata, comecei com manutenção e
-                  montagem de computadores. No trabalho, fazia manutenção dos laboratórios do programa PROINFO,
-                  utilizando o SO Linux Educacional, inclusive liderei um projeto piloto de ensino de informática para crianças e
-                  adolescentes. Mas foi na faculdade que ampliei meus horizontes sobre tecnologia, sobretudo programação.
-                  Me formei desenvolvendo um armário inteligente, utilizando Arduíno e RFID, sendo inclusive publicado na
-                  UEMA e UESPI.
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Et iste minima, temporibus vero nesciunt fugit aliquid nostrum,
+                  ratione non hic eum qui provident mollitia!
                </p>
                <motion.div
                   className="mt-[2rem] flex-col space-y-6 sm:space-y-0 

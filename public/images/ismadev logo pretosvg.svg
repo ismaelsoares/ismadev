@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1890" height="1417" viewBox="0 0 1890 1417">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 200px;
+        font-family: Poppins;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        font-weight: 300;
+      }
+
+      .cls-3 {
+        font-weight: 200;
+      }
+
+      .cls-4 {
+        fill: red;
+        font-size: 625px;
+      }
+    </style>
+  </defs>
+  <text id="ismadev_web_." data-name="ismadev web ." class="cls-1" x="212.75" y="741.301">isma<tspan class="cls-2">dev</tspan> <tspan class="cls-3">web <tspan class="cls-4">.</tspan></tspan></text>
+</svg>
