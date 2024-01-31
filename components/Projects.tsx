@@ -11,10 +11,11 @@ export const Projects = () => {
                <div className="transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative
                w-[100%] h-[200px] md:h-[300px]">
                   <Image
-                     src="/images/p1.jpg"
+                     src="/images/p1.png"
                      alt="portfolio"
                      layout="fill"
                      className="object-contain"
+                     onClick={() => window.open('https://dt-money-red.vercel.app/')}
                   />
                </div>
             </div>
@@ -22,10 +23,11 @@ export const Projects = () => {
                <div className="transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative
                w-[100%] h-[200px] md:h-[300px]">
                   <Image
-                     src="/images/p2.jpg"
+                     src="/images/p7.png"
                      alt="portfolio"
                      layout="fill"
                      className="object-contain"
+                     onClick={() => window.open('https://consultorio-web.vercel.app/')}
                   />
                </div>
             </div>
