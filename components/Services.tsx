@@ -20,8 +20,8 @@ export const Services = () => {
                   <h1 className="text-[20px] md:text-[30px] mt-[1.5rem] mb-[1.5rem]">
                      Frontend
                   </h1>
-                  <p className="text-[15px] text-[#d3d2d2] font-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus
-                     iste culpa atque porro dolor ullam libero vel qui debitis provident.
+                  <p className="text-[15px] text-[#d3d2d2] font-normal">
+                     HTML5 | CSS3 | React | Javascript | TypeScript | TailwindCSS
                   </p>
                </div>
             </div>
@@ -33,8 +33,8 @@ export const Services = () => {
                   <h1 className="text-[20px] md:text-[30px] mt-[1.5rem] mb-[1.5rem]">
                      Backend
                   </h1>
-                  <p className="text-[15px] text-[#d3d2d2] font-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus
-                     iste culpa atque porro dolor ullam libero vel qui debitis provident.
+                  <p className="text-[15px] text-[#d3d2d2] font-normal">
+                     NodeJS | Express | Fastify | PostGreSQL | MySQL | MongoDB
                   </p>
                </div>
             </div>
@@ -46,8 +46,8 @@ export const Services = () => {
                   <h1 className="text-[20px] md:text-[30px] mt-[1.5rem] mb-[1.5rem]">
                      Fullstack
                   </h1>
-                  <p className="text-[15px] text-[#d3d2d2] font-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus
-                     iste culpa atque porro dolor ullam libero vel qui debitis provident.
+                  <p className="text-[15px] text-[#d3d2d2] font-normal">
+                     Next.js
                   </p>
                </div>
             </div>
