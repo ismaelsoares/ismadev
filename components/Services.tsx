@@ -47,7 +47,7 @@ export const Services = () => {
                      Fullstack
                   </h1>
                   <p className="text-[15px] text-[#d3d2d2] font-normal">
-                     Next.js
+                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem nemo alias ducimus consequatur ea corporis dolorum blanditiis, temporibus vitae quod maxime dicta nulla reprehenderit molestiae pariatur ipsum illum perferendis quasi.
                   </p>
                </div>
             </div>

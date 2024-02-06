@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 import { fadeIn } from "@/variants";
 import { ArrowDownTrayIcon, PlayCircleIcon } from "@heroicons/react/20/solid";
 
-const openCV = () => window.open('https://drive.google.com/file/d/1R-lG60KJh_HMD5vT7tzTtzf-b1dlcniY/view?usp=sharing');
+const openCV = () => window.open('https://drive.google.com/file/d/1Wa-wjaJ4hiLaN10SbifqciBnjMOW-85s/view?usp=sharing');
 
 export const Hero = () => {
    return (
