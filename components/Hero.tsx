@@ -12,7 +12,7 @@ const openCV = () => window.open('https://drive.google.com/file/d/1Wa-wjaJ4hiLaN
 
 export const Hero = () => {
    return (
-      <div className="h-[88vh] bg-[url('/images/banner.jpg')] mt-[10vh] bg-cover bg-center">
+      <div id="hero" className="h-[88vh] bg-[url('/images/banner.jpg')] mt-[10vh] bg-cover bg-center">
          <Particle />
          <div className=" w-[80%] grid-cols-1 mx-auto grid lg:grid-cols-2 gap-[3rem] h-[100%] items-center">
             <motion.div
