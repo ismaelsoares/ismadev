@@ -41,6 +41,7 @@ export const MobileNav = ({ nav, closeNav }: Props) => {
                duration={500}
                onSetActive={handleSetActive}
                className="nav-link-mobile"
+               onClick={closeNav}
             >
                ABOUT
             </Link>
