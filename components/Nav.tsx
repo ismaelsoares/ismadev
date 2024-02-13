@@ -22,13 +22,12 @@ export const Nav = ({ openNav }: Props) => {
                width={250}
                height={250}
             />
-            {/* <Socials /> */}
             <Link
                activeClass="active"
-               to="hero"
+               to="home"
                spy={true}
                smooth={true}
-               offset={50}
+               offset={-100}
                duration={500}
                onSetActive={handleSetActive}
                className="nav-link"
@@ -40,7 +39,7 @@ export const Nav = ({ openNav }: Props) => {
                to="about"
                spy={true}
                smooth={true}
-               offset={50}
+               offset={-100}
                duration={500}
                onSetActive={handleSetActive}
                className="nav-link"
@@ -52,7 +51,7 @@ export const Nav = ({ openNav }: Props) => {
                to="services"
                spy={true}
                smooth={true}
-               offset={50}
+               offset={-100}
                duration={500}
                onSetActive={handleSetActive}
                className="nav-link"
@@ -64,7 +63,7 @@ export const Nav = ({ openNav }: Props) => {
                to="projects"
                spy={true}
                smooth={true}
-               offset={50}
+               offset={-100}
                duration={500}
                onSetActive={handleSetActive}
                className="nav-link"
@@ -76,7 +75,7 @@ export const Nav = ({ openNav }: Props) => {
                to="blog"
                spy={true}
                smooth={true}
-               offset={50}
+               offset={-100}
                duration={500}
                onSetActive={handleSetActive}
                className="nav-link"
@@ -88,7 +87,7 @@ export const Nav = ({ openNav }: Props) => {
                to="footer"
                spy={true}
                smooth={true}
-               offset={50}
+               offset={-100}
                duration={500}
                onSetActive={handleSetActive}
                className="nav-link"
