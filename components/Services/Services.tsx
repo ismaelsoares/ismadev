@@ -22,12 +22,19 @@ export const Services = () => {
           name="CodeBracketIcon"
           title="Frontend"
           skills="HTML5 | CSS3 | React | Javascript | TypeScript | TailwindCSS"
+          color="red"
         />
-        <ServiceCard name="CommandLineIcon" title="Fullstack" skills="" />
+        <ServiceCard
+          name="CommandLineIcon"
+          title="Fullstack"
+          skills="HTML5 | CSS3 | React | Javascript | TypeScript | TailwindCSS"
+          color="violet"
+        />
         <ServiceCard
           name="CodeBracketIcon"
           title="Backend"
           skills="NodeJS | Express | Fastify | PostGreSQL | MySQL | MongoDB"
+          color="blue"
         />
       </div>
     </div>
