@@ -28,8 +28,10 @@ export const ServiceCard = ({
             {...props}
             className="w-24 h-24 mx-auto text-[#d3fae8]"
           />
-          <h1 className="text-xl md:text-3xl mt-6 mb-6">{title}</h1>
-          <p className="text-base text-gray-200 font-normal">{skills}</p>
+          <div className="w-48 h-44 mx-auto">
+            <h1 className="text-xl md:text-4xl mt-6 mb-6">{title}</h1>
+            <p className="text-base text-gray-200 font-normal">{skills}</p>
+          </div>
         </div>
       </div>
     </div>

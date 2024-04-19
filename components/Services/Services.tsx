@@ -27,7 +27,7 @@ export const Services = () => {
         <ServiceCard
           name="CommandLineIcon"
           title="Fullstack"
-          skills="HTML5 | CSS3 | React | Javascript | TypeScript | TailwindCSS"
+          skills=""
           color="violet"
         />
         <ServiceCard
