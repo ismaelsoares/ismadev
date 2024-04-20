@@ -4,7 +4,7 @@ import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
 import { MobileNav } from "@/components/MobileNav";
 import { Nav } from "@/components/Nav";
-import { Projects } from "@/components/Projects";
+import { Projects } from "@/components/Projects/Projects";
 import { Services } from "@/components/Services/Services";
 import { Skills } from "@/components/Skills/Skills";
 import { Testimonial } from "@/components/Testimonial";
