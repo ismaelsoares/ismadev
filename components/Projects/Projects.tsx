@@ -9,9 +9,9 @@ export const Projects = () => {
     >
       <h1 className="heading pb-6">
         Pro<span className="text-yellow-400">jects</span>
-        <div className="w-[80%] pt-[2rem] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="w-4/5 pt-8 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           <ProjectItem
-            name="Atendee List"
+            name="Attendee List"
             src="/images/pass-in-web.png"
             alt="pass-in-web"
             layout="fill"
@@ -39,16 +39,18 @@ export const Projects = () => {
             link="https://expert-notes-inky.vercel.app/"
           />
           <ProjectItem
-            src="/images/pass-in-web.png"
-            alt="dt-money"
+            name="React Form with Zod"
+            src="/images/react-form-zod.png"
+            alt="react-form-zod"
             layout="fill"
-            link="https://pass-in-web.vercel.app/"
+            link="https://react-form-zod.vercel.app/"
           />
           <ProjectItem
-            src="/images/pass-in-web.png"
-            alt="dt-money"
+            name="Dashboard"
+            src="/images/openshop-dashboard.png"
+            alt="openshop-dashboard"
             layout="fill"
-            link="https://pass-in-web.vercel.app/"
+            link="https://openshop-dashboard.vercel.app/"
           />
         </div>
       </h1>

@@ -14,24 +14,21 @@ export const Services = () => {
       <p className="heading">
         My <span className="text-yellow-400">Services</span>
       </p>
-      <div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[80%] 
-         mx-auto items-center gap-[3rem] mt-[4rem] text-white"
-      >
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-3/4 mx-auto items-center gap-[3rem] mt-[4rem] text-white">
         <ServiceCard
-          name="CodeBracketIcon"
+          icon="CodeBracketIcon"
           title="Frontend"
           skills="HTML5 | CSS3 | React | Javascript | TypeScript | TailwindCSS"
           color="red"
         />
         <ServiceCard
-          name="CommandLineIcon"
+          icon="RocketLaunchIcon"
           title="Fullstack"
           skills=""
           color="violet"
         />
         <ServiceCard
-          name="CodeBracketIcon"
+          icon="CommandLineIcon"
           title="Backend"
           skills="NodeJS | Express | Fastify | PostGreSQL | MySQL | MongoDB"
           color="blue"
