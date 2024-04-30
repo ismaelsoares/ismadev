@@ -1,6 +1,6 @@
 import {
   DevicePhoneMobileIcon,
-  EnvelopeIcon,
+  EnvelopeOpenIcon,
   MapIcon,
 } from "@heroicons/react/20/solid";
 import { Contact } from "./Contact";
@@ -21,8 +21,8 @@ export const Footer = () => {
         />
         <Contact
           contact="Send Us Email"
-          content="ismaelsoaresdoria@gmail.com"
-          Icon={EnvelopeIcon}
+          content="ismaelsoares@gmail.com"
+          Icon={EnvelopeOpenIcon}
         />
       </div>
       <div className="w-[80%] mt-[2rem] mx-auto grid grid-cols-1 md:grid-cols-2 items-center justify-between">
