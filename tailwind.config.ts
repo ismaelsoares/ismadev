@@ -11,9 +11,13 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        primary: ["Poppins"]
-      }
+        primary: ["Poppins"],
+      },
+      colors: {
+        "lime-green": "#d3fae8",
+      },
     },
   },
+
   plugins: [],
-}
+};
