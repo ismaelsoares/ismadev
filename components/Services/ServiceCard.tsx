@@ -6,6 +6,12 @@ interface ServiceCardProps {
   skills: string;
   color: Colors;
 }
+const colorVariants = {
+  red: "bg-red-700 hover:scale-110 transform transition-all duration-300 uppercase font-semibold text-center p-10",
+  violet:
+    "bg-violet-700 hover:scale-110 transform transition-all duration-300 uppercase font-semibold text-center p-10",
+  blue: "bg-blue-700 hover:scale-110 transform transition-all duration-300 uppercase font-semibold text-center p-10",
+};
 
 export const ServiceCard = ({
   Icon,
