@@ -6,7 +6,7 @@ import { Services } from "@/components/Services/Services";
 import { Skills } from "@/components/Skills/Skills";
 import { Projects } from "@/components/Projects/Projects";
 import { Testimonial } from "@/components/Testimonial";
-import { Blog } from "@/components/Blog";
+import { Blog } from "@/components/Blog/Blog";
 import { Footer } from "@/components/Footer/Footer";
 
 import { useEffect, useState } from "react";

@@ -1,44 +1,78 @@
-import { SkillsItem } from "./SkillsItem";
-import { SkillsLanguage } from "./SkillsLanguage";
+import { SkillCard } from "./SkillCard";
 
 export const Skills = () => {
-   return (
-      <div className="pt-16 md:pt-[8rem] pb-[5rem] bg-[#09101a]">
-         <h1 className="heading">
-            Formação & <span className="text-yellow-400">Skills</span>
-         </h1>
-         <div className="w-[80%] mx-auto pt-[4rem] md:pt-[8rem] grid grid-cols-1 md:grid-cols-2 gap-[2rem] items-center">
+  return (
+    <div className="pt-[5rem] pb-[3rem] bg-[#09101a]">
+      <div className="grid w-4/5 mx-auto grid-cols-1 lg:grid-cols-7 gap-8 items-center">
+        <div className="col-span-3">
+          <p className="heading__min text-white mb-2">My Skills</p>
+          <p className="heading__primary text-4xl text-white">
+            Let's Explorer Popular{" "}
+            <span className="text-yellow-400">Skills</span> & Experience
+          </p>
+          <p className="text-white my-6">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vel,
+            harum voluptatibus, sint ullam sunt asperiores necessitatibus
+            temporibus ut enim delectus corrupti eligendi vitae doloremque magni
+            blanditiis nostrum quo suscipit!
+          </p>
+          <button className="relative flex h-[50px] w-40 items-center justify-center font-semibold overflow-hidden bg-red-500">
+            <span className="relative z-10">Learn More</span>
+          </button>
+        </div>
+        <div className="col-span-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4 gap-4 items-center">
             <div>
-               <SkillsItem title="React Developer" year="2015-2016" />
-               <SkillsLanguage
-                  skill1="html"
-                  skill2="css"
-                  skill3="javascript"
-                  skill4="sql"
-                  skill5="python"
-                  level1="w-[91%]"
-                  level2="w-[88%]"
-                  level3="w-[80%]"
-                  level4="w-[60%]"
-                  level5="w-[70%]"
-               />
+              <SkillCard
+                title="React"
+                image="/images/react.svg"
+                percent="90%"
+              />
             </div>
             <div>
-               <SkillsItem title="Next JS Developer" year="2021-2023" />
-               <SkillsLanguage
-                  skill1="React JS"
-                  skill2="Next JS"
-                  skill3="TypeScript"
-                  skill4="Tailwind CSS"
-                  skill5="Node/Express"
-                  level1="w-[81%]"
-                  level2="w-[78%]"
-                  level3="w-[85%]"
-                  level4="w-[75%]"
-                  level5="w-[78%]"
-               />
+              <SkillCard title="CSS" image="/images/css.svg" percent="90%" />
             </div>
-         </div>
+            <div>
+              <SkillCard
+                title="JavaScript"
+                image="/images/js.svg"
+                percent="77%"
+              />
+            </div>
+            <div>
+              <SkillCard
+                title="TypeScript"
+                image="/images/ts.svg"
+                percent="67%"
+              />
+            </div>
+            <div>
+              <SkillCard title="HTML" image="/images/html.svg" percent="67%" />
+            </div>
+            <div>
+              <SkillCard
+                title="Node JS"
+                image="/images/node.svg"
+                percent="67%"
+              />
+            </div>
+            <div>
+              <SkillCard
+                title="Next.js"
+                image="/images/next.svg"
+                percent="67%"
+              />
+            </div>
+            <div>
+              <SkillCard
+                title="Python"
+                image="/images/python.svg"
+                percent="67%"
+              />
+            </div>
+          </div>
+        </div>
       </div>
-   );
+    </div>
+  );
 };

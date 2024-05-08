@@ -29,7 +29,7 @@ export const Hero = () => {
           </h1>
           <TextEffect />
           <Socials />
-          <p className="mt-[1.5rem] text-[18px] text-[#ffffff92]">
+          <p className="mt-[1.5rem] text-lg text-[#ffffff92]">
             Trabalho como desenvolvedor web apaixonado por criar experiências
             incríveis na web. Tenho experiência em desenvolvimento front-end e
             back-end, utilizando tecnologias como HTML, CSS, JavaScript, React,
@@ -48,15 +48,14 @@ export const Hero = () => {
             exit="hidden"
           >
             <button
-              className="px-[2rem] hover:bg-yellow-400 transition-all duration-200 py-[1rem]
-                     text-[18px] font-bold uppercase bg-[#55e6a5] text-black flex items-center space-x-2"
+              className="px-[2rem] hover:bg-yellow-400 transition-all duration-200 py-[1rem] text-[18px] font-bold uppercase bg-lime-green text-black flex items-center space-x-2"
               onClick={openCV}
             >
               <p>Download Cv</p>
               <ArrowDownTrayIcon className="w-[1.6rem] h-[1.7rem] text-black" />
             </button>
             <button className="flex items-center space-x-2">
-              <PlayCircleIcon className="w-[4rem] h-[4rem] hover:text-yellow-400 transition-all duration-200 text-[#55e6a5]" />
+              <PlayCircleIcon className="w-[4rem] h-[4rem] hover:text-yellow-400 transition-all duration-200 text-lime-green" />
               <p className="text-[20px] font-semibold text-white">
                 Watch The Video
               </p>
@@ -64,7 +63,7 @@ export const Hero = () => {
           </motion.div>
         </motion.div>
         <motion.div
-          className="w-[600px] h-[600px] hidden bg-[#55e6a5] 
+          className="w-[600px] h-[600px] hidden bg-lime-green 
                relative lg:flex items-center rounded-full"
           variants={fadeIn("up", 0.5)}
           initial="hidden"
