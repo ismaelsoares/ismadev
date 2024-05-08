@@ -24,7 +24,7 @@ export const ServiceCard = ({
     <div>
       <div data-aos="zoom-in" data-aos-delay="300">
         <div className={bgColorClass}>
-          {Icon && <Icon className="w-24 h-24 mx-auto text-lime-green" />}
+          {Icon && <Icon className="w-24 h-24 mx-auto text-white" />}
           <div className="w-52 h-40 mx-auto">
             <h1 className="text-xl md:text-4xl mt-6 mb-6">{title}</h1>
             <p className="text-base text-gray-200 font-normal">{skills}</p>

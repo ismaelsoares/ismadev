@@ -14,7 +14,7 @@ module.exports = {
         primary: ["Poppins"],
       },
       colors: {
-        "lime-green": "#d3fae8",
+        "lime-green": "#55E6A5",
       },
     },
   },
