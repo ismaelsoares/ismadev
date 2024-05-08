@@ -8,7 +8,7 @@ export const Skills = () => {
           <p className="text-white mb-2">My Skills</p>
           <p className="text-4xl text-white">
             Aqui estão minhas principais{" "}
-            <span className="text-yellow-400">Skills</span> & Experience
+            <span className="text-yellow-400">Skills</span> & Projetos
           </p>
           <p className="text-white my-6">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vel,

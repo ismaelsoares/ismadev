@@ -14,7 +14,7 @@ export const SkillCard = ({ image, title, percent }: SkillCardProps) => {
         alt={title}
         width={80}
         height={80}
-        className="object-cover mx-auto"
+        className="h-16 mx-auto"
       />
       <p className="text-lg mt-4 text-white font-[600]">{title}</p>
       <div className="bg-black mt-4 rounded-lg p-2 text-white opacity-40">
