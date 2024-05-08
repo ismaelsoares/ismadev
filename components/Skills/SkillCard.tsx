@@ -8,7 +8,7 @@ interface SkillCardProps {
 
 export const SkillCard = ({ image, title, percent }: SkillCardProps) => {
   return (
-    <div className="p-4 hover:bg-red-700 duration-300 transition-all cursor-pointer text-center rounded-lg bg-gray-900">
+    <div className="p-4 hover:bg-slate-500 duration-300 transition-all cursor-pointer text-center rounded-lg bg-gray-900">
       <Image
         src={image}
         alt={title}
