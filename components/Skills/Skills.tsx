@@ -2,11 +2,11 @@ import { SkillCard } from "./SkillCard";
 
 export const Skills = () => {
   return (
-    <div className="pt-[5rem] pb-[3rem] bg-[#09101a]">
+    <div className="pt-20 pb-12 bg-[#09101a]">
       <div className="grid w-4/5 mx-auto grid-cols-1 lg:grid-cols-7 gap-8 items-center">
         <div className="col-span-3">
-          <p className="heading__min text-white mb-2">My Skills</p>
-          <p className="heading__primary text-4xl text-white">
+          <p className="text-white mb-2">My Skills</p>
+          <p className="text-4xl text-white">
             Let's Explorer Popular{" "}
             <span className="text-yellow-400">Skills</span> & Experience
           </p>
@@ -65,8 +65,8 @@ export const Skills = () => {
             </div>
             <div>
               <SkillCard
-                title="Python"
-                image="/images/python.svg"
+                title="Tailwind"
+                image="/images/tailwind.svg"
                 percent="67%"
               />
             </div>
