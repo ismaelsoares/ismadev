@@ -1,35 +1,29 @@
-type Colors = "red" | "violet" | "blue";
+import Image from "next/image";
 
 interface ServiceCardProps {
-  Icon: React.ElementType;
+  image: string;
   title: string;
-  skills: string;
-  color: Colors;
 }
-const colorVariants = {
-  red: "bg-red-700 hover:scale-110 transform transition-all duration-300 uppercase font-semibold text-center p-10",
-  violet:
-    "bg-violet-700 hover:scale-110 transform transition-all duration-300 uppercase font-semibold text-center p-10",
-  blue: "bg-blue-700 hover:scale-110 transform transition-all duration-300 uppercase font-semibold text-center p-10",
-};
 
-export const ServiceCard = ({
-  Icon,
-  title,
-  skills,
-  color,
-}: ServiceCardProps) => {
-  const bgColorClass = `bg-${color}-700 hover:scale-110 transform transition-all duration-300 uppercase font-semibold text-center p-10`;
+export const ServiceCard = ({ image, title }: ServiceCardProps) => {
   return (
-    <div>
-      <div data-aos="zoom-in" data-aos-delay="300">
-        <div className={bgColorClass}>
-          {Icon && <Icon className="w-24 h-24 mx-auto text-white" />}
-          <div className="w-52 h-40 mx-auto">
-            <h1 className="text-xl md:text-4xl mt-6 mb-6">{title}</h1>
-            <p className="text-base text-gray-200 font-normal">{skills}</p>
-          </div>
-        </div>
+    <div className="shadow-md hover:scale-110 transition-all duration-500 bg-black p-8 rounded-lg">
+      <Image
+        src={image}
+        alt={title}
+        width={80}
+        height={80}
+        className="mt-8 mb-8 mx-auto"
+      />
+      <div className="text-center">
+        <p className="text-white font-semibold text-[26px]">{title}</p>
+        <p className="mt-2 text-white text-xl text-opacity-60">
+          Promote your blog posts, case udie, and product ouncems nts with the
+          branded videos.
+        </p>
+        <button className="px-5 py-2 bg-blue-600 mt-8 text-white rounded-lg">
+          Read More
+        </button>
       </div>
     </div>
   );

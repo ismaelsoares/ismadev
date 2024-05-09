@@ -1,38 +1,32 @@
-import {
-  CodeBracketIcon,
-  CommandLineIcon,
-  RocketLaunchIcon,
-} from "@heroicons/react/20/solid";
+import { Heading } from "../Helper/Heading";
 import { ServiceCard } from "./ServiceCard";
 
 export const Services = () => {
   return (
-    <div
-      id="services"
-      className="bg-[#121212] pt-[4rem] md:pt-[8rem] pb-[5rem]"
-    >
-      <p className="heading">
-        My <span className="text-yellow-400">Services</span>
-      </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-3/4 mx-auto items-center gap-[3rem] mt-[4rem] text-white">
-        <ServiceCard
-          Icon={CodeBracketIcon}
-          title="Frontend"
-          skills="HTML5 | CSS3 | React | Javascript | TypeScript | TailwindCSS"
-          color="red"
-        />
-        <ServiceCard
-          Icon={RocketLaunchIcon}
-          title="Fullstack"
-          skills=""
-          color="violet"
-        />
-        <ServiceCard
-          Icon={CommandLineIcon}
-          title="Backend"
-          skills="NodeJS | Express | Fastify | PostGreSQL | MySQL | MongoDB"
-          color="blue"
-        />
+    <div className="pt-20 pb-12 bg-[#09101a]">
+      <Heading
+        headingPrimary="What can I do for clients?"
+        headingSub="Creative Services"
+      />
+      <div className="w-4/5 mt-16 mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-12 items-center">
+        <div>
+          <ServiceCard image="/images/icon1.png" title="Web Developer" />
+        </div>
+        <div>
+          <ServiceCard image="/images/icon2.png" title="React Developer" />
+        </div>
+        <div>
+          <ServiceCard image="/images/icon3.png" title="Next.js Developer" />
+        </div>
+        <div>
+          <ServiceCard image="/images/icon4.png" title="Node Developer" />
+        </div>
+        <div>
+          <ServiceCard image="/images/icon5.png" title="Frontend Developer" />
+        </div>
+        <div>
+          <ServiceCard image="/images/icon2.png" title="Backend Developer" />
+        </div>
       </div>
     </div>
   );
