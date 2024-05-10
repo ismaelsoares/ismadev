@@ -3,7 +3,7 @@ import { ServiceCard } from "./ServiceCard";
 
 export const Services = () => {
   return (
-    <div className="pt-20 pb-12 bg-[#09101a]">
+    <div id="services" className="pt-20 pb-12 bg-[#09101a]">
       <Heading
         headingPrimary="What can I do for clients?"
         headingSub="Creative Services"
