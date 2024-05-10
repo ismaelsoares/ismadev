@@ -15,7 +15,7 @@ const openCV = () =>
 
 export const Hero = () => {
   return (
-    <div className="h-[88vh] bg-[url('/images/banner.jpg')] mt-[10vh] bg-cover bg-center">
+    <div className="h-[88vh] bg-[url('/images/bglight2.jpg')] dark:bg-[url('/images/banner.jpg')] mt-[10vh] bg-cover bg-center">
       <Particle />
       <div className="w-4/5 grid-cols-1 mx-auto grid lg:grid-cols-2 gap-12 h-full items-center">
         <motion.div
@@ -24,12 +24,12 @@ export const Hero = () => {
           animate="show"
           exit="hidden"
         >
-          <h1 className="text-[35px] md:text-[50px] text-white font-bold">
+          <h1 className="text-[35px] md:text-[50px] ${color} font-bold dark:text-white">
             OLÁ, EU SOU <span className="text-yellow-400">ISMAEL!</span>
           </h1>
           <TextEffect />
           <Socials />
-          <p className="mt-[1.5rem] text-lg text-[#ffffff92]">
+          <p className="mt-6 text-lg dark:text-[#ffffff92]">
             Trabalho como desenvolvedor web apaixonado por criar experiências
             incríveis na web. Tenho experiência em desenvolvimento front-end e
             back-end, utilizando tecnologias como HTML, CSS, JavaScript, React,
@@ -56,7 +56,7 @@ export const Hero = () => {
             </button>
             <button className="flex items-center space-x-2">
               <PlayCircleIcon className="w-[4rem] h-[4rem] hover:text-yellow-400 transition-all duration-200 text-lime-green" />
-              <p className="text-[20px] font-semibold text-white">
+              <p className="text-[20px] font-semibold dark:text-white">
                 Watch The Video
               </p>
             </button>

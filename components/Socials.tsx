@@ -12,7 +12,7 @@ import {
 
 export const Socials = () => {
   return (
-    <div className="flex items-center text-lg gap-x-6 text-white mt-4">
+    <div className="flex items-center text-lg gap-x-6 dark:text-white mt-4">
       <Link
         href="https://www.linkedin.com/in/ismaeldoria/"
         target="_blank"
