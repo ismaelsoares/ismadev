@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 const Moon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className="size-5 sm:size-7"
+    className="size-4 sm:size-7"
     viewBox="0 0 20 20"
     fill="currentColor"
   >
@@ -14,7 +14,7 @@ const Moon = () => (
 const Sun = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className="size-5 sm:size-7"
+    className="size-4 sm:size-7"
     viewBox="0 0 20 20"
     fill="currentColor"
   >
