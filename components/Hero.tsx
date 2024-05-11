@@ -15,7 +15,7 @@ const openCV = () =>
 
 export const Hero = () => {
   return (
-    <div className="h-[88vh] bg-[url('/images/bglight2.jpg')] dark:bg-[url('/images/banner.jpg')] mt-[10vh] bg-cover bg-center">
+    <div className="h-[88vh] bg-[url('/images/bglight2.jpg')] dark:bg-[url('/images/bg3.jpg')] mt-[10vh] bg-cover bg-center">
       <Particle />
       <div className="w-4/5 grid-cols-1 mx-auto grid lg:grid-cols-2 gap-12 h-full items-center">
         <motion.div
@@ -24,12 +24,12 @@ export const Hero = () => {
           animate="show"
           exit="hidden"
         >
-          <h1 className="text-[35px] md:text-[50px] ${color} font-bold dark:text-white">
+          <p className="text-[35px] md:text-[50px] ${color} font-bold dark:text-white">
             OLÁ, EU SOU <span className="text-yellow-400">ISMAEL!</span>
-          </h1>
+          </p>
           <TextEffect />
           <Socials />
-          <p className="mt-6 text-lg dark:text-[#ffffff92]">
+          <p className="mt-6 text-base dark:text-[#ffffff92] lg:text-sm">
             Trabalho como desenvolvedor web apaixonado por criar experiências
             incríveis na web. Tenho experiência em desenvolvimento front-end e
             back-end, utilizando tecnologias como HTML, CSS, JavaScript, React,

@@ -1,23 +1,22 @@
 import { ArrowDownTrayIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
+import { Heading } from "../Helper/Heading";
 
 export const About = () => {
   return (
-    <div id="about" className="bg-[#121121] pb-12 pt-[4rem] md:pt-[8rem]">
+    <div
+      id="about"
+      className="bg-[url('/images/bglight.jpg')] dark:bg-[url('/images/bg2.jpg')] pb-12 pt-16 md:pt-[8rem]"
+    >
       <div className="grid grid-cols-1 md:grid-cols-2 w-[80%] mx-auto gap-[3rem] items-center">
         <div>
-          <h1 className="text-[20px] font-bold uppercase text-[#55e6a5] md-[1rem]">
-            SOBRE MIM
-          </h1>
-          <h2
-            className="text-[25px] md:text-[35px] lg:text-[45px] md:leading-[3rem] 
-               leading-[2rem] capitalize mb-[3rem] font-bold text-white"
-          >
-            Transforming <span className="text-yellow-400">Visions</span>
-          </h2>
+          <Heading
+            headingPrimary="SOBRE MIM"
+            headingSub={`Transformando Visões`}
+          />
           <div className="mb-[3rem] flex items-center md:space-x-10">
             <span className="w-[100px] hidden md:block h-[5px] bg-slate-400 rounded-sm"></span>
-            <p className="text-[19px] text-slate-300 w-[80%]">
+            <p className="text-base dark:text-slate-300 w-[80%]">
               Concursado desde os 18 anos, amante de tecnologia, autodidata,
               comecei com manutenção e montagem de computadores. No trabalho,
               fazia manutenção dos laboratórios do programa PROINFO, utilizando
