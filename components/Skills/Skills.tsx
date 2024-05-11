@@ -2,15 +2,15 @@ import { SkillCard } from "./SkillCard";
 
 export const Skills = () => {
   return (
-    <div className="pt-20 pb-12 bg-[#09101a]">
+    <div className="pt-20 pb-12 dark:bg-[#09101a]">
       <div className="grid w-4/5 mx-auto grid-cols-1 lg:grid-cols-7 gap-8 items-center">
         <div className="col-span-3">
-          <p className="text-white mb-2">My Skills</p>
-          <p className="text-4xl text-white">
+          <p className="dark:text-white mb-2">My Skills</p>
+          <p className="text-4xl dark:text-white">
             Aqui estão minhas principais{" "}
             <span className="text-yellow-400">Skills</span> & Projetos
           </p>
-          <p className="text-white my-6">
+          <p className="dark:text-white my-6">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vel,
             harum voluptatibus, sint ullam sunt asperiores necessitatibus
             temporibus ut enim delectus corrupti eligendi vitae doloremque magni

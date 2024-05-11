@@ -6,10 +6,8 @@ interface HeadingProps {
 export const Heading = ({ headingPrimary, headingSub }: HeadingProps) => {
   return (
     <div className="text-center p-2">
-      <h1 className="font-semibold text-[22px] md:text-[28px] text-yellow-500">
-        {headingSub}
-      </h1>
-      <h1 className="font-bold text-[25px] sm:text-[30px] md:text-[38px] dark:text-white">
+      <h1 className="text-2xl md:text-[28px] text-yellow-500">{headingSub}</h1>
+      <h1 className="text-4xl sm:text-[30px] md:text-[38px] dark:text-white">
         {headingPrimary}
       </h1>
     </div>
