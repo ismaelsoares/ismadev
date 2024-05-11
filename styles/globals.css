@@ -14,16 +14,16 @@
   }
 
   .heading {
-    @apply text-center text-white text-[28px] sm:text-[33px] md:text-[45px] font-bold uppercase;
+    @apply text-center dark:text-white text-[28px] sm:text-[33px] md:text-[45px] font-bold uppercase;
   }
 }
 
 .heading__mini {
-  @apply text-[17px] text-white opacity-75;
+  @apply text-[17px] dark:text-white opacity-75;
 }
 
 .heading__primary {
-  @apply my-[0.6rem] p-2 sm:p-0 leading-[3.5rem] text-white text-[27px] md:text-[30px] lg:text-[38px] xl:text-5xl;
+  @apply my-[0.6rem] p-2 sm:p-0 leading-[3.5rem] dark:text-white text-[27px] md:text-[30px] lg:text-[38px] xl:text-5xl;
 }
 
 .bg-1 {

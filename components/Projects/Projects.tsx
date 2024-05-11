@@ -2,7 +2,7 @@ import { ProjectCard } from "./ProjectCard";
 
 export const Projects = () => {
   return (
-    <div id="projects" className="pt-20 pb-20 bg-gray-900">
+    <div id="projects" className="pt-20 pb-20 dark:bg-gray-900">
       <div className="text-center">
         <p className="heading__mini">Recent Works</p>
         <p className="heading__primary">
