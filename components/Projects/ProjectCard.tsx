@@ -32,8 +32,8 @@ export const ProjectCard = ({
         />
       </div>
       <div>
-        <p className="text-2xl text-white">{title}</p>
-        <p className="text-white opacity-65 text-base mt-4">
+        <p className="text-2xl dark:text-white">{title}</p>
+        <p className="dark:text-white opacity-65 text-base mt-4">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias iusto
           cupiditate velit maiores dolorem id! Numquam, minus sequi dolore nisi
           consequuntur eum quisquam laboriosam recusandae facere, nobis quam
@@ -44,10 +44,10 @@ export const ProjectCard = ({
           <p className="px-6 py-3 bg-blue-700 text-white rounded-lg text-center">
             {tech1}
           </p>
-          <p className="px-6 py-3 bg-white text-black rounded-lg text-center">
+          <p className="px-6 py-3 bg-black text-white dark:bg-white dark:text-black rounded-lg text-center">
             {tech2}
           </p>
-          <p className="px-6 py-3 bg-white text-black text-center rounded-lg">
+          <p className="px-6 py-3 bg-black text-white dark:bg-white dark:text-black rounded-lg text-center">
             {tech3}
           </p>
           <p className="px-6 py-3 bg-blue-500 text-white rounded-lg text-center">

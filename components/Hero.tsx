@@ -15,7 +15,9 @@ const openCV = () =>
 
 export const Hero = () => {
   return (
-    <div className="h-[88vh] bg-[url('/images/bglight2.jpg')] dark:bg-[url('/images/bg3.jpg')] mt-[10vh] bg-cover bg-center">
+    <div
+      className={`h-[88vh] bg-[url('/images/bglight2.jpg')] dark:bg-[url('/images/bg3.jpg')] mt-[10vh] bg-cover bg-center`}
+    >
       <Particle />
       <div className="w-4/5 grid-cols-1 mx-auto grid lg:grid-cols-2 gap-12 h-full items-center">
         <motion.div
@@ -74,8 +76,10 @@ export const Hero = () => {
           <Image
             src="/images/avatar01.png"
             alt="user"
-            layout="fill"
-            className="object-cover rounded-full"
+            width={600}
+            height={600}
+            objectFit="cover"
+            className="object-cover rounded-full relative"
           />
         </motion.div>
       </div>
