@@ -5,7 +5,7 @@ import { Socials } from "./Socials";
 
 // framer motion
 import { motion } from "framer-motion";
-import { fadeIn } from "@/variants";
+import { fadeIn } from "@/utils/tsparticles/variants";
 import { ArrowDownTrayIcon, PlayCircleIcon } from "@heroicons/react/20/solid";
 
 const openCV = () =>
@@ -15,9 +15,7 @@ const openCV = () =>
 
 export const Hero = () => {
   return (
-    <div
-      className={`h-[88vh] bg-[url('/images/bglight2.jpg')] dark:bg-[url('/images/bg3.jpg')] mt-[10vh] bg-cover bg-center`}
-    >
+    <div className="bg-1">
       <Particle />
       <div className="w-4/5 grid-cols-1 mx-auto grid lg:grid-cols-2 gap-12 h-full items-center">
         <motion.div
@@ -26,7 +24,7 @@ export const Hero = () => {
           animate="show"
           exit="hidden"
         >
-          <p className="text-[35px] md:text-[50px] ${color} font-bold dark:text-white">
+          <p className="text-[35px] md:text-[50px] font-bold dark:text-white">
             OLÁ, EU SOU <span className="text-yellow-400">ISMAEL!</span>
           </p>
           <TextEffect />
@@ -42,7 +40,7 @@ export const Hero = () => {
             mundo da web!
           </p>
           <motion.div
-            className="mt-[2rem] flex-col space-y-6 sm:space-y-0 
+            className="mt-8 flex-col space-y-6 sm:space-y-0 
                   sm:flex sm:flex-row items-center sm:space-x-6"
             variants={fadeIn("right", 0.6)}
             initial="hidden"

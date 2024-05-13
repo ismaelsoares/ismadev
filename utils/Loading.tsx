@@ -2,7 +2,7 @@ import ReactLoading from "react-loading";
 
 export const Loading = () => {
   return (
-    <div className="h-[100vh] flex justify-center items-center">
+    <div className="h-[100vh] flex justify-center items-center bg-slate-800">
       <ReactLoading
         type={"spokes"}
         color={"#CA9F27"}
