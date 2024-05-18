@@ -5,8 +5,9 @@ import { Socials } from "./Socials";
 
 // framer motion
 import { motion } from "framer-motion";
-import { fadeIn } from "@/utils/tsparticles/variants";
+import { fadeIn } from "@/utils/variants";
 import { ArrowDownTrayIcon, PlayCircleIcon } from "@heroicons/react/20/solid";
+import { useSelector } from "react-redux";
 
 const openCV = () =>
   window.open(
@@ -14,8 +15,12 @@ const openCV = () =>
   );
 
 export const Hero = () => {
+  const isDark = useSelector((state: any) => state.theme.isDark);
+  const bg = isDark ? "bg-dark" : "bg-light";
+  const textColor = isDark ? "text-white" : "text-black";
+
   return (
-    <div className="bg-1">
+    <div className={`${bg} h-[88vh] mt-[15vh] mb-[5vh]`}>
       <Particle />
       <div className="w-4/5 grid-cols-1 mx-auto grid lg:grid-cols-2 gap-12 h-full items-center">
         <motion.div
@@ -24,12 +29,12 @@ export const Hero = () => {
           animate="show"
           exit="hidden"
         >
-          <p className="text-[35px] md:text-[50px] font-bold dark:text-white">
+          <p className={`text-[35px] md:text-[50px] font-bold ${textColor}`}>
             OLÁ, EU SOU <span className="text-yellow-400">ISMAEL!</span>
           </p>
           <TextEffect />
           <Socials />
-          <p className="mt-6 text-base dark:text-[#ffffff92] lg:text-sm">
+          <p className={`${textColor} mt-6 text-base lg:text-sm`}>
             Trabalho como desenvolvedor web apaixonado por criar experiências
             incríveis na web. Tenho experiência em desenvolvimento front-end e
             back-end, utilizando tecnologias como HTML, CSS, JavaScript, React,

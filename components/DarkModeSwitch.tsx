@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { lightMode, darkMode } from "../lib/reducer";
 
 const Moon = () => (
   <svg
@@ -28,18 +30,15 @@ const Sun = () => (
 
 export const DarkModeSwitch = () => {
   const [isDark, setIsDark] = useState(false);
-
+  const iconColor = isDark ? "text-yellow-400" : "text-gray-400";
+  const dispatch = useDispatch();
   const setDark = () => {
-    document.documentElement.classList.add("dark");
-    document.documentElement.classList.remove("light");
-    localStorage.removeItem("theme");
+    dispatch(darkMode());
     setIsDark(true);
   };
 
   const setLight = () => {
-    document.documentElement.classList.add("light");
-    document.documentElement.classList.remove("dark");
-    localStorage.removeItem("theme");
+    dispatch(lightMode());
     setIsDark(false);
   };
 
@@ -59,7 +58,7 @@ export const DarkModeSwitch = () => {
   }, []);
   return (
     <button
-      className="text-gray-400 dark:text-yellow-400 hover:bg-slate-200 p-2 flex items-center justify-center rounded-md dark:hover:bg-slate-700"
+      className={`${iconColor} hover:bg-slate-200 p-2 flex items-center justify-center rounded-md`}
       onClick={toggleMode}
     >
       {isDark ? <Sun /> : <Moon />}

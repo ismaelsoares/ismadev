@@ -26,7 +26,7 @@
   @apply my-[0.6rem] p-2 sm:p-0 leading-[3.5rem] dark:text-white text-[27px] md:text-[30px] lg:text-[38px] xl:text-5xl;
 }
 
-.bg-1 {
+.bg-light {
   background-image: linear-gradient(
       to right,
       rgba(255, 255, 255, 0.863),
@@ -36,19 +36,17 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 88vh;
-  margin-top: 15vh;
-  margin-bottom: 5vh;
 }
+
 .bg-dark {
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.863),
       rgba(0, 0, 0, 0.37)
     ),
-    url("/images/bg3.jpg");
+    url("/images/bgdark1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+  /* clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%); */
 }

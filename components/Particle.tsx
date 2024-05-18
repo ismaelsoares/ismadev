@@ -11,9 +11,12 @@ import {
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 // import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
 
+import { useSelector } from "react-redux";
+
 export const Particle = () => {
   const [init, setInit] = useState(false);
-
+  const isDark = useSelector((state: any) => state.theme.isDark);
+  const particlesColor = isDark ? "#FFFFFF" : "#000000";
   // this should be run only once per application lifetime
   useEffect(() => {
     initParticlesEngine(async (engine) => {
@@ -64,10 +67,10 @@ export const Particle = () => {
       },
       particles: {
         color: {
-          value: "#000000",
+          value: `#FFFFFF`,
         },
         links: {
-          color: "#000000",
+          color: `${particlesColor}`,
           distance: 150,
           enable: true,
           opacity: 0.5,
