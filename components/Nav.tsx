@@ -1,104 +1,52 @@
-import { Bars3Icon } from "@heroicons/react/20/solid";
-import Image from "next/image";
-import { Link } from "react-scroll";
-import { DarkModeSwitch } from "./DarkModeSwitch";
-interface Props {
-  openNav: () => void;
+"use client";
+
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+interface Link {
+  name: string;
+  path: string;
 }
 
-const handleSetActive = (to: any) => console.log(to);
-export const Nav = ({ openNav }: Props) => {
+const links: Link[] = [
+  {
+    name: "home",
+    path: "/",
+  },
+  {
+    name: "services",
+    path: "/services",
+  },
+  {
+    name: "resume",
+    path: "/resume",
+  },
+  {
+    name: "work",
+    path: "/work",
+  },
+  {
+    name: "contact",
+    path: "/contact",
+  },
+];
+
+export const Nav = () => {
+  const pathName = usePathname();
+  console.log(pathName);
   return (
-    <nav className="w-[100%] fixed z-[10000] top-0 h-[12vh] bg-[#141c27] shadow-md">
-      <div className="flex items-center justify-between w-[80%] mx-auto h-[100%]">
-        {/* <h1 className="flex-[0.6] cursor-pointer text-[25px] text-white font-bold">
-               WEB
-               <span className="text-yellow-300">DEV</span>
-            </h1> */}
-        <DarkModeSwitch />
-        <Image
-          className="flex-[0.1] cursor-pointer mt-1"
-          src="/images/logo.svg"
-          alt="logo"
-          width={250}
-          height={250}
-        />
+    <nav className="flex gap-8">
+      {links.map((link: Link, index) => (
         <Link
-          activeClass="active"
-          to="home"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={500}
-          onSetActive={handleSetActive}
-          className="nav-link"
+          href={link.path}
+          key={index}
+          className={`${
+            link.path === pathName && "text-accent border-b-2 border-accent"
+          } capitalize hover:text-accent transition-all `}
         >
-          HOME
+          {link.name}
         </Link>
-        <Link
-          activeClass="active"
-          to="about"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={500}
-          onSetActive={handleSetActive}
-          className="nav-link"
-        >
-          ABOUT
-        </Link>
-        <Link
-          activeClass="active"
-          to="services"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={500}
-          onSetActive={handleSetActive}
-          className="nav-link"
-        >
-          SERVICES
-        </Link>
-        <Link
-          activeClass="active"
-          to="projects"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={500}
-          onSetActive={handleSetActive}
-          className="nav-link"
-        >
-          PROJECTS
-        </Link>
-        <Link
-          activeClass="active"
-          to="blog"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={500}
-          onSetActive={handleSetActive}
-          className="nav-link"
-        >
-          BLOG
-        </Link>
-        <Link
-          activeClass="active"
-          to="footer"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={500}
-          onSetActive={handleSetActive}
-          className="nav-link"
-        >
-          CONTACT
-        </Link>
-        <div onClick={openNav}>
-          <Bars3Icon className="w-[2rem] md:hidden h-[2rem] cursor-pointer text-yellow-300" />
-        </div>
-      </div>
+      ))}
     </nav>
   );
 };

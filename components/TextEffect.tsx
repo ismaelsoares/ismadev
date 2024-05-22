@@ -1,24 +1,19 @@
+"use client";
 import { TypeAnimation } from "react-type-animation";
 
-export const TextEffect = () => {
+interface TitleProps {
+  title: Array<string | number>;
+  color: string;
+}
+export const TextEffect = ({ title, color }: TitleProps) => {
   return (
-    <TypeAnimation
-      sequence={[
-        // Same substring at the start will only be typed out once, initially
-        "Coder",
-        1500, // wait 1s before replacing "Mice" with "Hamsters"
-        "Web Developer",
-        1500,
-        "Front-End",
-        1500,
-        "Back-End",
-        1500,
-        "Systems Analyst",
-        1500,
-      ]}
-      speed={50}
-      className="text-[2rem] md:text-[2rem] text-[#55e6a5] font-bold uppercase"
-      repeat={Infinity}
-    />
+    <p>
+      <TypeAnimation
+        sequence={title}
+        speed={20}
+        repeat={Infinity}
+        className={`h1 mb-6 ${color}`}
+      />
+    </p>
   );
 };
