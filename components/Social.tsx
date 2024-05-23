@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 
 import { FaGithub, FaLinkedin, FaYoutube, FaTwitter } from "react-icons/fa";
@@ -12,8 +14,8 @@ interface StyleComponentProps {
 }
 
 const socials: Socials[] = [
-  { icon: <FaGithub />, path: "" },
-  { icon: <FaLinkedin />, path: "" },
+  { icon: <FaGithub />, path: "https://github.com/ismaelsoares" },
+  { icon: <FaLinkedin />, path: "https://www.linkedin.com/in/ismaeldoria/" },
   { icon: <FaYoutube />, path: "" },
   { icon: <FaTwitter />, path: "" },
 ];
@@ -25,7 +27,12 @@ export const Social = ({
     <div className={containerStyles}>
       {socials.map((item, index) => {
         return (
-          <Link key={index} href={item.path} className={iconStyles}>
+          <Link
+            key={index}
+            href={item.path}
+            className={iconStyles}
+            target="_blank"
+          >
             {item.icon}
           </Link>
         );

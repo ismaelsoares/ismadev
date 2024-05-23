@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 
@@ -6,6 +8,11 @@ import { Social } from "@/components/Social";
 import { Photo } from "@/components/Photo";
 import { Stats } from "@/components/Stats";
 import { TextEffect } from "@/components/TextEffect";
+
+const openCV = () =>
+  window.open(
+    "https://drive.google.com/file/d/1Wa-wjaJ4hiLaN10SbifqciBnjMOW-85s/view?usp=sharing"
+  );
 
 const Home = () => {
   return (
@@ -50,6 +57,7 @@ const Home = () => {
                 variant="outline"
                 size="lg"
                 className="uppercase flex items-center gap-2"
+                onClick={openCV}
               >
                 <span>Download CV</span>
                 <FiDownload className="text-xl" />
