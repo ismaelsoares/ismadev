@@ -46,7 +46,7 @@ interface ExperienceEduProps {
 const about: DataProps = {
   title: "About me",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis labore ",
+    "Concursado desde os 18 anos, amante de tecnologia, autodidata, comecei com manutenção e montagem de computadores. No trabalho, fazia manutenção dos laboratórios do programa PROINFO, utilizando o SO Linux Educacional, inclusive liderei um projeto piloto de ensino de informática para crianças e adolescentes. Mas foi na faculdade que ampliei meus horizontes sobre tecnologia, sobretudo programação. Me formei desenvolvendo um armário inteligente, utilizando Arduíno e RFID, sendo inclusive publicado na UEMA e UESPI.",
   info: [
     {
       fieldName: "Name",
