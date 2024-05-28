@@ -67,6 +67,28 @@ const projects: ProjectProps[] = [
     live: "",
     github: "",
   },
+  {
+    num: "04",
+    category: "fullstack",
+    title: "Expert notes",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae tempora, aliquid rem ipsa quae dolorum?",
+    stack: [{ name: "React" }, { name: "Tailwind" }],
+    image: "/assets/work/thumb4.png",
+    live: "https://expert-notes-inky.vercel.app/",
+    github: "",
+  },
+  {
+    num: "05",
+    category: "fullstack",
+    title: "Pass in Web",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae tempora, aliquid rem ipsa quae dolorum?",
+    stack: [{ name: "React" }, { name: "Tailwind" }],
+    image: "/assets/work/thumb5.png",
+    live: "https://pass-in-web.vercel.app/",
+    github: "https://github.com/ismaelsoares/pass-in-web",
+  },
 ];
 
 const Work = () => {
@@ -123,7 +145,7 @@ const Work = () => {
               {/* buttons */}
               <div className="flex items-center gap-4">
                 {/* live project button */}
-                <Link href={project.live}>
+                <Link href={project.live} target="_blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -136,7 +158,7 @@ const Work = () => {
                   </TooltipProvider>
                 </Link>
                 {/* github project button */}
-                <Link href={project.github}>
+                <Link href={project.github} target="_blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
