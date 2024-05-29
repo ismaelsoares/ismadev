@@ -45,6 +45,7 @@ const Home = () => {
                 1500,
               ]}
               speed={20}
+              deletionSpeed={70}
               repeat={Infinity}
               className={`h1 mb-6 whitespace-pre-line block ${textColor}`}
             />
