@@ -7,7 +7,9 @@ import { FiDownload } from "react-icons/fi";
 import { Social } from "@/components/Social";
 import { Photo } from "@/components/Photo";
 import { Stats } from "@/components/Stats";
-import { TextEffect } from "@/components/TextEffect";
+
+import { TypeAnimation } from "react-type-animation";
+import { useState } from "react";
 
 const openCV = () =>
   window.open(
@@ -15,6 +17,7 @@ const openCV = () =>
   );
 
 const Home = () => {
+  const [textColor, setTextColor] = useState("text-accent");
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
@@ -27,24 +30,23 @@ const Home = () => {
               <br />
               <span className="text-accent">Ismael Doria</span>
             </h1> */}
-            <TextEffect
-              title={[`Hello I'm`, 1500, `I'm`, 11300]}
-              color={`text-white`}
-            />
-            <TextEffect
-              title={[
-                `Ismael Doria`,
+            <TypeAnimation
+              sequence={[
+                2000,
+                `Hello I'm\nIsmael Doria`,
                 1500,
-                `Web Dev`,
+                `I'm\nWeb Dev`,
                 1500,
-                `Front End`,
+                `I'm\nFront End`,
                 1500,
-                `Back End`,
+                `I'm\nBack End`,
                 1500,
-                `Full Stack`,
+                `I'm\nFull Stack`,
                 1500,
               ]}
-              color={`text-accent`}
+              speed={20}
+              repeat={Infinity}
+              className={`h1 mb-6 whitespace-pre-line block ${textColor}`}
             />
 
             <p className="max-w-[500px] mb-9 text-white/80">

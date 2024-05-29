@@ -23,4 +23,16 @@
   .text-outline-hover {
     -webkit-text-stroke: 1px #00ff99;
   }
+
+  .bg-light {
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.863),
+        rgba(255, 255, 255, 0.37)
+      ),
+      url("/assets/bg/bglight.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 }
