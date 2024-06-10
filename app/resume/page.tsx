@@ -7,6 +7,8 @@ import {
   FaReact,
   FaFigma,
   FaNodeJs,
+  FaDocker,
+  FaDatabase,
 } from "react-icons/fa";
 
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
@@ -196,6 +198,14 @@ const skills: SkillProps = {
     {
       icon: <FaFigma />,
       name: "figma",
+    },
+    {
+      icon: <FaDocker />,
+      name: "docker",
+    },
+    {
+      icon: <FaDatabase />,
+      name: "SQL",
     },
   ],
 };
