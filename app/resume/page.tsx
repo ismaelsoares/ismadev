@@ -9,11 +9,12 @@ import {
   FaNodeJs,
   FaDocker,
   FaDatabase,
-  FaPython,
-  FaFlask,
 } from "react-icons/fa";
+import { SiTailwindcss, SiNextdotjs, SiTypescript } from "react-icons/si";
 
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import { BiLogoTypescript } from "react-icons/bi";
+import { TbBrandReactNative } from "react-icons/tb";
+
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   Tooltip,
@@ -22,6 +23,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { ScrollArea } from "@/components/ui/scroll-area";
+
 import { motion } from "framer-motion";
 //about data
 interface FieldProps {
@@ -182,8 +184,16 @@ const skills: SkillProps = {
       name: "javascript",
     },
     {
+      icon: <SiTypescript />,
+      name: "typescript",
+    },
+    {
       icon: <FaReact />,
       name: "react.js",
+    },
+    {
+      icon: <TbBrandReactNative />,
+      name: "React Native",
     },
     {
       icon: <SiNextdotjs />,
@@ -196,14 +206,6 @@ const skills: SkillProps = {
     {
       icon: <FaNodeJs />,
       name: "node.js",
-    },
-    {
-      icon: <FaPython />,
-      name: "python",
-    },
-    {
-      icon: <FaFlask />,
-      name: "flask",
     },
     {
       icon: <FaFigma />,
